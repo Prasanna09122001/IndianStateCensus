@@ -10,7 +10,7 @@ namespace StateCensusAnalyser
     {
         public enum ExceptionType
         {
-            FILE_INCORRECT,FILE_NOT_EXISTS,HEADER_INCORRECT
+            FILE_INCORRECT,FILE_NOT_EXISTS,HEADER_INCORRECT,DELIMETER_INCORRECT
         }
         public ExceptionType type;
         public CensusAnalysisException(ExceptionType type, string message) : base(message)

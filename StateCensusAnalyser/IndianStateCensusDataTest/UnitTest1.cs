@@ -8,13 +8,13 @@ namespace IndianStateCensusDataTest
         public string stateCensusDataFilepath1 = @"D:\Bridgelabz Statement\IndianStatesCensus\IndianStateCensus\StateCensusAnalyser\StateCensusAnalyser\File\StateCensusData.txt";
         public string stateCensusDataFilepath2= @"D:\Bridgelabz Statement\IndianStatesCensus\IndianStateCensus\StateCensusAnalyser\StateCensusAnalyser\File\StateCensusDat.csv";
         public string stateCensusDataFilepath3 = @"D:\Bridgelabz Statement\IndianStatesCensus\IndianStateCensus\StateCensusAnalyser\StateCensusAnalyser\File\StateCensus.csv";
-        public string stateCensusDataFilePath4 = @"D:\Bridgelabz Statement\IndianStatesCensus\IndianStateCensus\StateCensusAnalyser\StateCensusAnalyser\File\StateCencsusDelimeter.csv";
+        public string stateCensusDataFilePath4 = @"D:\Bridgelabz Statement\IndianStatesCensus\IndianStateCensus\StateCensusAnalyser\StateCensusAnalyser\File\StateCeensusDelimeter.csv";
 
         public string StateCodeDataFilepath = @"D:\Bridgelabz Statement\IndianStatesCensus\IndianStateCensus\StateCensusAnalyser\StateCensusAnalyser\File\StateCode.csv";
         public string StateCodeDataFilepath1 = @"D:\Bridgelabz Statement\IndianStatesCensus\IndianStateCensus\StateCensusAnalyser\StateCensusAnalyser\File\StateCode.txt";
         public string StateCodeDataFilepath2 = @"D:\Bridgelabz Statement\IndianStatesCensus\IndianStateCensus\StateCensusAnalyser\StateCensusAnalyser\File\StateCod.csv";
-        public string StateCodeDataFilepath3 = @"D:\Bridgelabz Statement\IndianStatesCensus\IndianStateCensus\StateCensusAnalyser\StateCensusAnalyser\File\StateCodeH.csv";
-        public string StateCodeDataFilepath4 = @"D:\Bridgelabz Statement\IndianStatesCensus\IndianStateCensus\StateCensusAnalyser\StateCensusAnalyser\File\StateCodeDelimeter.csv";
+        public string StateCodeDataFilepath3 = @"D:\Bridgelabz Statement\IndianStatesCensus\IndianStateCensus\StateCensusAnalyser\StateCensusAnalyser\File\StateCodeData.csv";
+        public string StateCodeDataFilepath4 = @"D:\Bridgelabz Statement\IndianStatesCensus\IndianStateCensus\StateCensusAnalyser\StateCensusAnalyser\File\StateCodeH.csv";
         [Test]
         public void GivenStateCensusData_WhenAnalysed_RecordsShouldBeMatched()
         {
