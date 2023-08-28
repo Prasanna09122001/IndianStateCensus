@@ -48,7 +48,7 @@ namespace IndianStateCensusDataTest
             {
                 using (StreamWriter stream = File.AppendText(filepath))
                 {
-                    stream.WriteLine(ex.GetType());
+                    stream.WriteLine(ex.Message);
                 }
                 Assert.AreEqual(ex.Message, "File Not Exists");
             }
@@ -64,7 +64,7 @@ namespace IndianStateCensusDataTest
             {
                 using (StreamWriter stream = File.AppendText(filepath))
                 {
-                    stream.WriteLine(ex.GetType());
+                    stream.WriteLine(ex.Message);
                 }
                 Assert.AreEqual(ex.Message, "Header Incorrect");
             }
@@ -80,7 +80,7 @@ namespace IndianStateCensusDataTest
             {
                 using (StreamWriter stream = File.AppendText(filepath))
                 {
-                    stream.WriteLine(ex.GetType());
+                    stream.WriteLine(ex.Message);
                 }
                 Assert.AreEqual(ex.Message, "Delimeter Incorrect");
             }
@@ -103,7 +103,7 @@ namespace IndianStateCensusDataTest
             {
                 using (StreamWriter stream = File.AppendText(filepath))
                 {
-                    stream.WriteLine(ex.GetType());
+                    stream.WriteLine(ex.Message);
                 }
                 Assert.AreEqual(ex.Message, "File Extension incorrect");
             }
@@ -119,7 +119,7 @@ namespace IndianStateCensusDataTest
             {
                 using (StreamWriter stream = File.AppendText(filepath))
                 {
-                    stream.WriteLine(ex.GetType());
+                    stream.WriteLine(ex.Message);
                 }
                 Assert.AreEqual(ex.Message, "File Not Exists");
             }
@@ -135,7 +135,7 @@ namespace IndianStateCensusDataTest
             {
                 using (StreamWriter stream = File.AppendText(filepath))
                 {
-                    stream.WriteLine(ex.GetType());
+                    stream.WriteLine(ex.Message);
                 }
                 Assert.AreEqual(ex.Message, "Header Incorrect");
             }
@@ -151,7 +151,7 @@ namespace IndianStateCensusDataTest
             {
                 using (StreamWriter stream = File.AppendText(filepath))
                 {
-                    stream.WriteLine(ex.GetType());
+                    stream.WriteLine(ex.Message);
                 }
                 Assert.AreEqual(ex.Message, "Delimeter Incorrect");
             }
