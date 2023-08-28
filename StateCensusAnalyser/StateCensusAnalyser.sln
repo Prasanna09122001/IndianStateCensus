@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StateCensusAnalyser", "StateCensusAnalyser\StateCensusAnalyser.csproj", "{99924A86-71C6-4A95-8F53-69300C82D466}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndianStateCensusDataTest", "IndianStateCensusDataTest\IndianStateCensusDataTest.csproj", "{C2BD4654-81B9-4149-8430-F11CFF1437D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IndianStateCensusDataTest", "IndianStateCensusDataTest\IndianStateCensusDataTest.csproj", "{C2BD4654-81B9-4149-8430-F11CFF1437D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

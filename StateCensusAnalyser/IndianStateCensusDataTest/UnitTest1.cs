@@ -4,6 +4,7 @@ namespace IndianStateCensusDataTest
 {
     public class Tests
     {
+        public string filepath = @"D:\Bridgelabz Statement\IndianStatesCensus\IndianStateCensus\StateCensusAnalyser\StateCensusAnalyser\Exceptionfile.txt";
         public string stateCensusDataFilepath = @"D:\Bridgelabz Statement\IndianStatesCensus\IndianStateCensus\StateCensusAnalyser\StateCensusAnalyser\File\StateCensusData.csv";
         public string stateCensusDataFilepath1 = @"D:\Bridgelabz Statement\IndianStatesCensus\IndianStateCensus\StateCensusAnalyser\StateCensusAnalyser\File\StateCensusData.txt";
         public string stateCensusDataFilepath2= @"D:\Bridgelabz Statement\IndianStatesCensus\IndianStateCensus\StateCensusAnalyser\StateCensusAnalyser\File\StateCensusDat.csv";
@@ -25,10 +26,14 @@ namespace IndianStateCensusDataTest
         {
             try
             {
-                StateCensus.ReadStateCensusData(stateCensusDataFilepath1);
+                StateCensus.ReadStateCensusData(stateCensusDataFilepath1); 
             }
             catch (CensusAnalysisException ex)
             {
+                using (StreamWriter stream = File.AppendText(filepath))
+                {
+                    stream.WriteLine(ex.Message);
+                }
                 Assert.AreEqual(ex.Message, "File Extension incorrect");
             }
         }
@@ -41,6 +46,10 @@ namespace IndianStateCensusDataTest
             }
             catch (CensusAnalysisException ex)
             {
+                using (StreamWriter stream = File.AppendText(filepath))
+                {
+                    stream.WriteLine(ex.GetType());
+                }
                 Assert.AreEqual(ex.Message, "File Not Exists");
             }
         }
@@ -53,6 +62,10 @@ namespace IndianStateCensusDataTest
             }
             catch (CensusAnalysisException ex)
             {
+                using (StreamWriter stream = File.AppendText(filepath))
+                {
+                    stream.WriteLine(ex.GetType());
+                }
                 Assert.AreEqual(ex.Message, "Header Incorrect");
             }
         }
@@ -65,6 +78,10 @@ namespace IndianStateCensusDataTest
             }
             catch (CensusAnalysisException ex)
             {
+                using (StreamWriter stream = File.AppendText(filepath))
+                {
+                    stream.WriteLine(ex.GetType());
+                }
                 Assert.AreEqual(ex.Message, "Delimeter Incorrect");
             }
         }
@@ -84,6 +101,10 @@ namespace IndianStateCensusDataTest
             }
             catch (CensusAnalysisException ex)
             {
+                using (StreamWriter stream = File.AppendText(filepath))
+                {
+                    stream.WriteLine(ex.GetType());
+                }
                 Assert.AreEqual(ex.Message, "File Extension incorrect");
             }
         }
@@ -96,6 +117,10 @@ namespace IndianStateCensusDataTest
             }
             catch (CensusAnalysisException ex)
             {
+                using (StreamWriter stream = File.AppendText(filepath))
+                {
+                    stream.WriteLine(ex.GetType());
+                }
                 Assert.AreEqual(ex.Message, "File Not Exists");
             }
         }
@@ -108,6 +133,10 @@ namespace IndianStateCensusDataTest
             }
             catch (CensusAnalysisException ex)
             {
+                using (StreamWriter stream = File.AppendText(filepath))
+                {
+                    stream.WriteLine(ex.GetType());
+                }
                 Assert.AreEqual(ex.Message, "Header Incorrect");
             }
         }
@@ -120,6 +149,10 @@ namespace IndianStateCensusDataTest
             }
             catch (CensusAnalysisException ex)
             {
+                using (StreamWriter stream = File.AppendText(filepath))
+                {
+                    stream.WriteLine(ex.GetType());
+                }
                 Assert.AreEqual(ex.Message, "Delimeter Incorrect");
             }
         }
